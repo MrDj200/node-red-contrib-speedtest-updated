@@ -6,10 +6,10 @@
 
 ## Installation
 
-Install `node-red-contrib-speedtest` using [npm](https://www.npmjs.com/):
+Install `node-red-contrib-speedtest-updated` using [npm](https://www.npmjs.com/):
 
 ```bash
-npm install --save node-red-contrib-speedtest
+npm install --save node-red-contrib-speedtest-updated
 ```
 
 ## Usage
@@ -19,7 +19,9 @@ Any input will request a speed-test. The output looks like the [original data ou
 
 ## License
 
-MIT © [Steffen Müller](http://steffen.io)
+MIT ©
+Original Author: [Steffen Müller](http://steffen.io)<br/>
+Maintainer of this repository: [MrDj200](https://github.com/MrDj200)
 
-[npm-url]: https://npmjs.org/package/node-red-contrib-speedtest
+[npm-url]: https://npmjs.org/package/node-red-contrib-speedtest-updated
 [npm-image]: https://badge.fury.io/js/node-red-contrib-speedtest.svg

@@ -6,6 +6,9 @@ RED.nodes.registerType('speedtest', {
         name: {
             value: ''
         },
+        serverId: {
+            value: null
+        },
         maxTime: {
             value: 5 * 1000
         }
@@ -26,6 +29,11 @@ RED.nodes.registerType('speedtest', {
     </div>
 
     <div class="form-row">
+        <label for="node-input-serverId">ServerID</label>
+        <input type="text" id="node-input-serverId", placeholder="1">
+    </div>
+
+    <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
@@ -34,5 +42,8 @@ RED.nodes.registerType('speedtest', {
 <script type="text/x-red" data-help-name="speedtest">
     <p>
         A <a href="https://github.com/ddsol/speedtest.net">speedtest.net</a> node.
+    </p>
+    <p>
+        Server list right <a href="https://www.speedtest.net/speedtest-servers-static.php">here.</a> 
     </p>
 </script>

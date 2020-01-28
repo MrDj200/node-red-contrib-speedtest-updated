@@ -9,7 +9,12 @@ module.exports = exports = function(RED) {
 
         this.on('input', msg => {
             this.status({ fill: 'yellow', shape: 'dot', text: 'Requesting' });
-            var test = speedTest({ maxTime: config.maxTime });
+            let speed = {maxTime: config.maxTime};
+            if (config.serverId) {
+                speed.serverId = config.serverId;
+            }
+            console.log(speed);
+            var test = speedTest(speed);
 
             test.on('data', data => {
                 var reponse = Object.assign({}, data, { config: config });
